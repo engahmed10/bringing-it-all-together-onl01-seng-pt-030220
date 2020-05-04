@@ -35,7 +35,7 @@ end
 
 def self.create(name:, breed:)
   #binding.pry
-  new=self.new(name,breed)
+  new=self.new(name:name,breed:breed)
   binding.pry
 
   new.save
