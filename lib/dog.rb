@@ -35,7 +35,7 @@ end
 
 def self.create(hash_attr)
   #binding.pry
-  new=self.new(hash_attr)
+  new=self.new(hash_attr[name],hash_attr[breed])
   binding.pry
 
   new.save
