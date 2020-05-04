@@ -45,10 +45,7 @@ end
 
 def self.new_from_db(row)
     #data=DB[:conn].execute("SELECT * FROM dogs")
-
-    binding.pry
-
-    self.new(row[0],row[1])
+    self.new(row[0],row[1],row[2])
     binding.pry
 end
 
