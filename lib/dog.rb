@@ -43,9 +43,9 @@ def update
   DB[:conn].execute("UPDATE dogs SET name = ?,breed = ? WHERE id=?",self.name,self.breed,self.id)
 end
 
-def self.new_from_db
-    data=DB[:conn].execute("SELECT * FROM dogs")
-    self.new(data[0],data[1])
+def self.new_from_db(row)
+    #data=DB[:conn].execute("SELECT * FROM dogs")
+    self.new(row[0],row[1])
     binding.pry
 end
 
