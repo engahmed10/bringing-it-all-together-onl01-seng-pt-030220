@@ -34,8 +34,10 @@ def save
 end
 
 def self.create(hash_attr)
-  binding.pry
+  #binding.pry
   new=self.new(hash_attr)
+  binding.pry
+
   new.save
   new
 end
