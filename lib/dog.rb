@@ -33,9 +33,9 @@ def save
 
 end
 
-def self.create(hash_attr)
+def self.create(name:,breed:)
   #binding.pry
-  new=self.new(hash_attr[:breed],hash_attr[:name])
+  new=self.new(name,breed)
   binding.pry
 
   new.save
